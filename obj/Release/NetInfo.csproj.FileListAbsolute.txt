@@ -1,0 +1,5 @@
+G:\C#\NetworkInfo\NetInfo\NetInfo\bin\Release\NetInfo.exe.config
+G:\C#\NetworkInfo\NetInfo\NetInfo\bin\Release\NetInfo.exe
+G:\C#\NetworkInfo\NetInfo\NetInfo\bin\Release\NetInfo.pdb
+G:\C#\NetworkInfo\NetInfo\NetInfo\obj\Release\NetInfo.exe
+G:\C#\NetworkInfo\NetInfo\NetInfo\obj\Release\NetInfo.pdb
