@@ -1,0 +1,6 @@
+G:\C#\NetworkInfo\NetInfo\NetInfo\bin\Debug\NetInfo.exe.config
+G:\C#\NetworkInfo\NetInfo\NetInfo\bin\Debug\NetInfo.exe
+G:\C#\NetworkInfo\NetInfo\NetInfo\bin\Debug\NetInfo.pdb
+G:\C#\NetworkInfo\NetInfo\NetInfo\obj\Debug\NetInfo.csprojResolveAssemblyReference.cache
+G:\C#\NetworkInfo\NetInfo\NetInfo\obj\Debug\NetInfo.exe
+G:\C#\NetworkInfo\NetInfo\NetInfo\obj\Debug\NetInfo.pdb
