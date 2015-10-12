@@ -19,20 +19,17 @@ namespace NetInfo
     class Program
     {
 
-        static void Main(string[] args) 
+        static void Main(string[] args) // Seperate into classes
         {
 
             SetConsoleProperties(); // Setup Console Properties
-
-            
-
             ConsoleLoop(); // Start Applicaton loop
             
 
             // Press Space bar to expand
             // More info
             // Press Space bar to retract just IP Name of Pc and IP address and time flashing disconected for ping test
-            
+            // Server Statuses for basic (steam server, TF2 Item Server maybe config later down the line)
         }
 
         /// <summary>
@@ -118,6 +115,7 @@ namespace NetInfo
                 {
                     case OperationalStatus.Down:
                         System.Console.ForegroundColor = ConsoleColor.DarkRed;
+                        //System.Console.SetCursorPosition(Console.CursorLeft + 12, Console.CursorTop);
                         break;
 
                     case OperationalStatus.Up:
