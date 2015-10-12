@@ -38,26 +38,38 @@ namespace NetInfo
 
                 Console.Write(adapter.Name); // Get Adapter Name
 
+                //clsGeneral.CreateConsoleBuffer(55, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+
                 switch (adapter.OperationalStatus) // Get Appropriate Colour for status
                 {
                     case OperationalStatus.Down:
                         System.Console.ForegroundColor = ConsoleColor.DarkRed;
-                        //System.Console.SetCursorPosition(Console.CursorLeft + 12, Console.CursorTop);
+
+                        clsGeneral.CreateConsoleBuffer(49, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+
                         break;
 
                     case OperationalStatus.Up:
                         System.Console.ForegroundColor = ConsoleColor.DarkGreen;
-                        break;
 
+                        clsGeneral.CreateConsoleBuffer(50, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+
+                        break;
+                        
                     case OperationalStatus.Unknown:
                         System.Console.ForegroundColor = ConsoleColor.DarkCyan;
+
+                        clsGeneral.CreateConsoleBuffer(50, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+
                         break;
 
                     case default(OperationalStatus):
                         System.Console.ForegroundColor = ConsoleColor.Gray;
+
+                        clsGeneral.CreateConsoleBuffer(48, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+
                         break;
                 }
-
 
                 System.Console.WriteLine(" [" + adapter.OperationalStatus + "]"); // Get Adapter Status
 
@@ -92,6 +104,8 @@ namespace NetInfo
                 {
 
                     System.Console.Write(networkAdapter.Name);
+
+                    clsGeneral.CreateConsoleBuffer(45, networkAdapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                     foreach (UnicastIPAddressInformation adapterIP in networkAdapter.GetIPProperties().UnicastAddresses) // For Each address present on adapter
                     {
@@ -147,6 +161,8 @@ namespace NetInfo
                             System.Console.Write(adapter.Name);
 
                             System.Console.ForegroundColor = ConsoleColor.DarkGray;
+
+                            clsGeneral.CreateConsoleBuffer(28, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                             System.Console.WriteLine(" - " + adapterDNS.ToString());
 

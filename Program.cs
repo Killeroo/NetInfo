@@ -22,10 +22,9 @@ namespace NetInfo
         static void Main(string[] args) // Seperate into classes
         {
 
-            
-            // Start Applicaton loop
-           
-
+            clsConsole.SetConsoleProperties(); // Setup console properties
+            clsConsole.ConsoleLoop(); // Start Applicaton loop
+           // Background tasks with ping
             // Press Space bar to expand
             // More info
             // Press Space bar to retract just IP Name of Pc and IP address and time flashing disconected for ping test

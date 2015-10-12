@@ -17,7 +17,7 @@ namespace NetInfo
         /// <summary>
         /// Creates an application loop for refreshing the console
         /// </summary>
-        static void ConsoleLoop()
+        public static void ConsoleLoop()
         {
             // Local Variable Declaration
             bool consoleRunning = true;
@@ -31,7 +31,9 @@ namespace NetInfo
                 System.Console.WriteLine("Tick = " + count);
 
                 clsSystem.GetBasicInfo();
-                clsNetwork.GetAdapters(true);
+                clsNetwork.GetAdapters();
+                clsNetwork.GetIPAddresses_IPv4();
+                clsNetwork.GetDNSAddresses_IPv4();
 
 
                 System.Console.SetCursorPosition(0, 0); // Set Cursor Position back to start
@@ -46,7 +48,7 @@ namespace NetInfo
         /// Sets the Basic console properties
         /// required by this program
         /// </summary>
-        static void SetConsoleProperties()
+        public static void SetConsoleProperties()
         {
             System.Console.Clear();
             System.Console.Title = "NetInfo - Version 1";
