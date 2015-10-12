@@ -16,7 +16,7 @@ namespace NetInfo
         /// <param name="iVariableLength">Length of variable so as to adapt buffer size</param>
         /// <param name="strBufferCharacter"> Character to use as buffer character (default " " [Space] )</param>
         /// <returns>Appropriate buffer length (returned as string) at correct size based on size of character</returns>
-        static string CreateTextBuffer(int iBufferSize, int iVariableLength, string strBufferCharacter = " ")
+        public static string CreateTextBuffer(int iBufferSize, int iVariableLength, string strBufferCharacter = " ")
         {
             // Local Varaible Declaration
             string strReturnString = null;
@@ -30,15 +30,16 @@ namespace NetInfo
         /// </summary>
         /// <param name="iBufferSize">Intended Size of buffer</param>
         /// <param name="iContentSize">Size of content already on line (in characters)</param>
-        /// <param name="iCursorPosition">Current position of cursor</param>
-        /// <param name="bolNewLine">(optional) specifies if a new line should be created (default yes)</param>
-        static void CreateConsoleBuffer(int iBufferSize, int iContentSize, int iCursorPosition, bool bolNewLine = true)
+        public static void CreateConsoleBuffer(int iBufferSize, int iContentSize)
         {
+            int iBuffer = 0;
+            
             if (iBufferSize > iContentSize)
             {
-
+                iBuffer = iBufferSize - iContentSize;
             }
-            //System.Console.SetCursorPosition(
+
+            System.Console.SetCursorPosition(Console.WindowLeft + iBuffer, Console.WindowTop); 
 
         }
     }

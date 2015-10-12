@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsConsole.cs" />
     <Compile Include="clsGeneral.cs" />
+    <Compile Include="clsNetwork.cs" />
+    <Compile Include="clsSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

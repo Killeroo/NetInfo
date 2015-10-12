@@ -10,3 +10,9 @@ G:\C#\NetworkInfo\NetInfo\NetInfo\obj\Debug\NetInfo.pdb
 \\ds-fs01\home$\matthew.carney\Desktop\NetInfo-master\bin\Debug\NetInfo.exe
 \\ds-fs01\home$\matthew.carney\Desktop\NetInfo-master\bin\Debug\NetInfo.pdb
 \\ds-fs01\home$\matthew.carney\Desktop\NetInfo-master\obj\Debug\NetInfo.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\NetInfo\bin\Debug\NetInfo.exe.config
+C:\Users\user\Documents\GitHub\NetInfo\obj\Debug\NetInfo.exe
+C:\Users\user\Documents\GitHub\NetInfo\obj\Debug\NetInfo.pdb
+C:\Users\user\Documents\GitHub\NetInfo\bin\Debug\NetInfo.exe
+C:\Users\user\Documents\GitHub\NetInfo\bin\Debug\NetInfo.pdb
+C:\Users\user\Documents\GitHub\NetInfo\obj\Debug\NetInfo.csprojResolveAssemblyReference.cache
