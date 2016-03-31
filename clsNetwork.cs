@@ -13,7 +13,7 @@ namespace NetInfo
     /// </summary>
     class clsNetwork
     {
-
+		// Poop
         /// <summary>
         /// Prints a list of all adapters currently installed on PC
         /// and their status.
