@@ -8,4 +8,5 @@ matrix:
       dist: trusty
       script:
       - dotnet restore
+      - dotnet build
     - mono: latest
