@@ -6,7 +6,4 @@ matrix:
     - dotnet: 1.0.1
       mono: none
       dist: trusty
-      mono:
-        - latest
-        - 3.12.0
-        - 3.10.0
+    - mono: latest
