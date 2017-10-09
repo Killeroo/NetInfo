@@ -1,10 +1,12 @@
 language: csharp
 solution: NetInfo.sln
-mono:
-  - latest
-  - 3.12.0
-  - 3.10.0
-dotnet: 1.0.3
-dist: trusty
-script:
- - dotnet restore
+
+matrix:
+  include:
+    - dotnet: 1.0.1
+      mono: none
+      dist: trusty
+      mono:
+        - latest
+        - 3.12.0
+        - 3.10.0
