@@ -16,3 +16,9 @@ C:\Users\user\Documents\GitHub\NetInfo\obj\Debug\NetInfo.pdb
 C:\Users\user\Documents\GitHub\NetInfo\bin\Debug\NetInfo.exe
 C:\Users\user\Documents\GitHub\NetInfo\bin\Debug\NetInfo.pdb
 C:\Users\user\Documents\GitHub\NetInfo\obj\Debug\NetInfo.csprojResolveAssemblyReference.cache
+C:\Projects\NetInfo\bin\Debug\NetInfo.exe.config
+C:\Projects\NetInfo\obj\Debug\NetInfo.exe
+C:\Projects\NetInfo\obj\Debug\NetInfo.pdb
+C:\Projects\NetInfo\bin\Debug\NetInfo.exe
+C:\Projects\NetInfo\bin\Debug\NetInfo.pdb
+C:\Projects\NetInfo\obj\Debug\NetInfo.csprojResolveAssemblyReference.cache

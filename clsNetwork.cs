@@ -28,7 +28,7 @@ namespace NetInfo
 
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.WriteLine("PC Adapters.....................");
-            System.Console.ForegroundColor = ConsoleColor.Gray;
+            System.Console.ForegroundColor = clsConsole.color;
 
             foreach (NetworkInterface adapter in localNetAdapters)
             {
@@ -45,35 +45,35 @@ namespace NetInfo
                     case OperationalStatus.Down:
                         System.Console.ForegroundColor = ConsoleColor.DarkRed;
 
-                        clsGeneral.CreateConsoleBuffer(49, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+                        clsGeneral.CreateConsoleBuffer(34, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                         break;
 
                     case OperationalStatus.Up:
                         System.Console.ForegroundColor = ConsoleColor.DarkGreen;
 
-                        clsGeneral.CreateConsoleBuffer(50, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+                        clsGeneral.CreateConsoleBuffer(35, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                         break;
                         
                     case OperationalStatus.Unknown:
                         System.Console.ForegroundColor = ConsoleColor.DarkCyan;
 
-                        clsGeneral.CreateConsoleBuffer(50, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+                        clsGeneral.CreateConsoleBuffer(32, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                         break;
 
                     case default(OperationalStatus):
-                        System.Console.ForegroundColor = ConsoleColor.Gray;
+                        System.Console.ForegroundColor = clsConsole.color;
 
-                        clsGeneral.CreateConsoleBuffer(48, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+                        clsGeneral.CreateConsoleBuffer(32, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                         break;
                 }
 
                 System.Console.WriteLine(" [" + adapter.OperationalStatus + "]"); // Get Adapter Status
 
-                System.Console.ForegroundColor = ConsoleColor.Gray; // Reset Colour
+                System.Console.ForegroundColor = clsConsole.color; // Reset Colour
 
             }
 
@@ -95,7 +95,7 @@ namespace NetInfo
 
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.WriteLine("IP Addresses....................");
-            System.Console.ForegroundColor = ConsoleColor.Gray;
+            System.Console.ForegroundColor = clsConsole.color;
 
             foreach (NetworkInterface networkAdapter in NetworkInterface.GetAllNetworkInterfaces())
             {
@@ -105,7 +105,7 @@ namespace NetInfo
 
                     System.Console.Write(networkAdapter.Name);
 
-                    clsGeneral.CreateConsoleBuffer(45, networkAdapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+                    clsGeneral.CreateConsoleBuffer(30, networkAdapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
                     foreach (UnicastIPAddressInformation adapterIP in networkAdapter.GetIPProperties().UnicastAddresses) // For Each address present on adapter
                     {
@@ -115,7 +115,7 @@ namespace NetInfo
 
                             System.Console.ForegroundColor = ConsoleColor.DarkGreen;
                             System.Console.WriteLine(" [" + adapterIP.Address.ToString() + "]");
-                            System.Console.ForegroundColor = ConsoleColor.Gray;
+                            System.Console.ForegroundColor = clsConsole.color;
 
                         }
 
@@ -142,7 +142,7 @@ namespace NetInfo
 
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.WriteLine("DNS Servers.....................");
-            System.Console.ForegroundColor = ConsoleColor.Gray;
+            System.Console.ForegroundColor = clsConsole.color;
 
             foreach (NetworkInterface adapter in localNetAdapters)
             {
@@ -162,13 +162,13 @@ namespace NetInfo
 
                             System.Console.ForegroundColor = ConsoleColor.DarkGray;
 
-                            clsGeneral.CreateConsoleBuffer(28, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
+                            clsGeneral.CreateConsoleBuffer(32, adapter.Name.ToString().Length, Console.CursorTop); // Set Buffer 
 
-                            System.Console.WriteLine(" - " + adapterDNS.ToString());
+                            System.Console.WriteLine(adapterDNS.ToString());
 
                         }
 
-                        System.Console.ForegroundColor = ConsoleColor.Gray;
+                        System.Console.ForegroundColor = clsConsole.color;
 
                     }
 
