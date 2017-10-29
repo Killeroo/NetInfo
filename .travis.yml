@@ -7,6 +7,5 @@ matrix:
       mono: none
       dist: trusty
       script:
-      - dotnet restore
-      - dotnet build
+      - build.sh
     - mono: latest
