@@ -7,5 +7,5 @@ matrix:
       mono: none
       dist: trusty
       script:
-      - build.sh
+      - sh .\build.sh
     - mono: latest
