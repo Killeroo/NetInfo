@@ -53,7 +53,7 @@ namespace NetInfo
 
             Console.ForegroundColor = color;
 
-            Console.ReadKey();
+            //Console.ReadKey();
 
         }
 
