@@ -3,7 +3,7 @@ solution: NetInfo.sln
 
 matrix:
   include:
-    - dotnet: 1.0.1
+    - dotnet: 2.0.0
       mono: none
       dist: trusty
       script:
